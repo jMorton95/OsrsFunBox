@@ -1,2 +1,7 @@
-# OsrsFunBox
-.NET Core + React App that consumes OSRS + Runelite API 
+# OsrsFunBox 
+#### .NET Core API + React Frontend for personal trackers 
+  
+###### Features to Implement:  
+- `Herb Run Calculator`  
+- `Boss Drop Tracker + Rate Estimation`
+- `Exp Tracker`
