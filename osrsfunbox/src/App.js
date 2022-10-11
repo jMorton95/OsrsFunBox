@@ -3,20 +3,6 @@ import './App.css';
 
 function App() {
 
-  const url = "https://localhost:7033/api/osrs";
-  
-  const getData = async () => {
-    const data = await fetch(url);
-    const parsed = await data.json();
-
-    console.log(parsed);
-    return parsed;
-  }
-
-  const snapdragon = getData();
-
-  console.log(snapdragon.Name)
-
   return (
     <div className="App">
       <header className="App-header">

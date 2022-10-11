@@ -437,23 +437,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JoshMorton\\.nuget\\packages\\": {},
+    "C:\\Users\\44795\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JoshMorton\\Documents\\MyWork\\personalRepos\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\APICallerTest.csproj",
+      "projectUniqueName": "D:\\1Programming\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\APICallerTest.csproj",
       "projectName": "APICallerTest",
-      "projectPath": "C:\\Users\\JoshMorton\\Documents\\MyWork\\personalRepos\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\APICallerTest.csproj",
-      "packagesPath": "C:\\Users\\JoshMorton\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JoshMorton\\Documents\\MyWork\\personalRepos\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\obj\\",
+      "projectPath": "D:\\1Programming\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\APICallerTest.csproj",
+      "packagesPath": "C:\\Users\\44795\\.nuget\\packages\\",
+      "outputPath": "D:\\1Programming\\Personal Projects\\OsrsFunBox\\ApiCallerTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JoshMorton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\44795\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

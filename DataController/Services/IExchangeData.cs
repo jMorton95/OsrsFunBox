@@ -3,6 +3,6 @@
     public interface IExchangeData
     {
         
-        Task<string> GetExchangeRecord();
+        Task<string> GetExchangeRecord(int id);
     }
 }

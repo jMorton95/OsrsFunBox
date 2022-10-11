@@ -5,6 +5,26 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const url = "https://localhost:7033/api/osrs";
+const nums = {a:2, b:3000, c:3051};
+
+
+const getData = async (id) => {
+  const data = await fetch(`${url}?id=${id}`)
+  const parsed = data.text();
+  return parsed;
+}
+
+const logData = async (ids) => {
+  for (const num in ids) {
+   console.log(await getData(ids[num]));
+    }
+  }
+  
+logData(nums);
+
+
 root.render(
   <React.StrictMode>
     <App />

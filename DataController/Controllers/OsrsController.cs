@@ -5,21 +5,24 @@ using static DataController.Models.ExchangeItem;
 
 namespace DataController.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/id")]
     [ApiController]
     public class OsrsController : Controller
     {
         ExchangeData GE = new ExchangeData();
         
         [HttpGet]
-        public async Task<Root> Get()
+        public async Task<String> GetName(int Id)
         {
-            var itemLookup = await GE.GetExchangeRecord();
+            var record = await GE.GetExchangeRecord(Id);
             
-            Root? item = JsonConvert.DeserializeObject<Root>(itemLookup);
-                
+            Root? parsedRecord = JsonConvert.DeserializeObject<Root>(record);
+
+            Console.WriteLine(parsedRecord.item.name);
+
+            var itemName = parsedRecord.item.name;
             
-            return item;
+            return itemName;
         }
     }
 }
