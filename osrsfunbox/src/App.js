@@ -2,6 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const url = "https://localhost:7033/api/osrs"
+  const getData = async () => {
+    const data = await fetch(url);
+    const parsed = data.toString();
+    console.log(parsed);
+    return data;
+  }
+
+  getData();
+
   return (
     <div className="App">
       <header className="App-header">

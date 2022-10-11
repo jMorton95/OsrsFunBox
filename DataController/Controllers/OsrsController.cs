@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DataController.Services;
+using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json.Linq;
 using static System.Net.WebRequestMethods;
 
@@ -8,10 +9,12 @@ namespace DataController.Controllers
     [ApiController]
     public class OsrsController : Controller
     {
+        ExchangeData GE = new ExchangeData();
+        
         [HttpGet]
-        public async Task<JToken> Get()
+        public async Task<string> Get()
         {
-            string baseUrl = "https://secure.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=3051";
+            /*string baseUrl = "https://secure.runescape.com/m=itemdb_oldschool/api/catalogue/detail.json?item=3000";
             var dataString = "";
 
             try
@@ -22,14 +25,16 @@ namespace DataController.Controllers
                     {
                         using (HttpContent content = res.Content)
                         {
+                            Console.WriteLine(content.ReadAsStream());
 
                             var data = await content.ReadAsStringAsync();
 
                             if (data != null)
                             {
                                 dataString = data;
+                                //Console.WriteLine(dataString);
                                 var token1 = JObject.Parse(dataString);
-                                Console.WriteLine(token1);
+                                //Console.WriteLine(token1);
                             }
                             else
                             {
@@ -43,8 +48,9 @@ namespace DataController.Controllers
             {
                 Console.WriteLine(ex.Message);
             }
+            var token = JObject.Parse(dataString);*/
 
-            var token = JObject.Parse(dataString);
+            var token = await GE.GetExchangeRecord();
             return token;
         }
     }
