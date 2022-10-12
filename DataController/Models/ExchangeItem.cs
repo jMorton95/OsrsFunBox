@@ -6,54 +6,54 @@ namespace DataController.Models
     {
         public class Current
         {
-            public string trend { get; set; }
-            public string price { get; set; }
+            public string Trend { get; set; }
+            public string Price { get; set; }
         }
 
         public class Day180
         {
-            public string trend { get; set; }
-            public string change { get; set; }
+            public string Trend { get; set; }
+            public string Change { get; set; }
         }
 
         public class Day30
         {
-            public string trend { get; set; }
-            public string change { get; set; }
+            public string Trend { get; set; }
+            public string Change { get; set; }
         }
 
         public class Day90
         {
-            public string trend { get; set; }
-            public string change { get; set; }
+            public string Trend { get; set; }
+            public string Change { get; set; }
         }
 
         public class Item
         {
-            public string icon { get; set; }
-            public string icon_large { get; set; }
-            public int id { get; set; }
-            public string type { get; set; }
-            public string typeIcon { get; set; }
-            public string name { get; set; }
-            public string description { get; set; }
-            public Current current { get; set; }
-            public Today today { get; set; }
-            public string members { get; set; }
-            public Day30 day30 { get; set; }
-            public Day90 day90 { get; set; }
-            public Day180 day180 { get; set; }
+            public string Icon { get; set; }
+            public string Icon_large { get; set; }
+            public int Id { get; set; }
+            public string Type { get; set; }
+            public string TypeIcon { get; set; }
+            public string Name { get; set; }
+            public string Description { get; set; }
+            public Current Current { get; set; }
+            public Today Today { get; set; }
+            public string Members { get; set; }
+            public Day30 Day30 { get; set; }
+            public Day90 Day90 { get; set; }
+            public Day180 Day180 { get; set; }
         }
 
         public class Root
         {
-            public Item item { get; set; }
+            public Item Item { get; set; }
         }
 
         public class Today
         {
-            public string trend { get; set; }
-            public string price { get; set; }
+            public string Trend { get; set; }
+            public string Price { get; set; }
         }
 
     }

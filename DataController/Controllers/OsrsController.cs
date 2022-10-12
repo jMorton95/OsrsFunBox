@@ -18,9 +18,9 @@ namespace DataController.Controllers
             
             Root? parsedRecord = JsonConvert.DeserializeObject<Root>(record);
 
-            Console.WriteLine(parsedRecord.item.name);
+            Console.WriteLine(parsedRecord.Item.Name);
 
-            var itemName = parsedRecord.item.name;
+            var itemName = parsedRecord.Item.Name;
             
             return itemName;
         }
